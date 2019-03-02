@@ -1,0 +1,72 @@
+/* Tipos de letra en toda la página web */
+html {
+  font-family: 'Nunito', 'Roboto', Arial, Helvetica, Sans-serif;
+}
+
+/* Contenedor principal */
+.container {
+  background: #183C55;
+  background: -webkit-linear-gradient(to right, #8B304F, #5B2569);
+  background: linear-gradient(to right, #8B304F, #0B2638);
+  height: 100vh; /* Para colocar el color en toda la pantalla */
+  /* Esto afecta al contenedor secundario */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Dimenciones y colores del contenedor secundario */
+.content {
+  max-width: 1300px;
+  max-height: 450px;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  /* Diferencial horizontal Diferencial Vertical Desenfoque Amplitud Color*/
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  border-radius: 10px;
+  padding: 1em;
+}
+
+/* Estilos en texto */
+a {
+  color: #1B6480;
+  font-weight: 700; /* Grosor de letra */
+  text-decoration: none; /* Eliminamos la linea */
+}
+
+h1 {
+  text-align: center;
+  text-transform: uppercase; /* Letras en mayusculas */
+}
+
+.paragraph {
+  line-height: 18em; /* Espacio entre lineas de texto */
+  font-weight: 300; /* Grosor de letra */
+}
+
+/* Esilos en tablas */
+.table {
+  width: 100%;
+  border-spacing: 0; /* Se retira la separacion del borde */
+}
+
+.table th, .table td {
+  padding: 1em; /* Espacio dentro de la celda */
+}
+
+.table tr:nth-child(even) { /* SeudoClase odd es impar y even par*/
+  background-color: #F3E5F5;
+}
+
+.fa-star {
+  color: #FFC400;
+}
+
+/* Atributos de borde */
+.title-item {
+  border-bottom-style: dashed; /* Tipos de borde */
+  border-width: 3px; /* Grosor */
+  border-color: #1B6480; /* Color */
+  padding-bottom: 1em;
+}
